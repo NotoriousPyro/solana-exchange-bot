@@ -1,0 +1,5 @@
+[Service]
+Environment="NODE_ENV=production"
+#Environment="DEBUG=true"
+Environment="SIGNER_KEY="
+Environment="BE_KEY="

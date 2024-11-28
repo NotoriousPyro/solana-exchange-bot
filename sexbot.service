@@ -1,0 +1,14 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/home/sexbot/.nvm/nvm-exec npm run trade
+WorkingDirectory=/home/sexbot/sexbot
+Restart=always
+Type=simple
+User=sexbot
+Group=sexbot
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
